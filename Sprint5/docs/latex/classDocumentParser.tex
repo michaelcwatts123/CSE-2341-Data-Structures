@@ -1,0 +1,76 @@
+\hypertarget{classDocumentParser}{}\section{Document\+Parser Class Reference}
+\label{classDocumentParser}\index{Document\+Parser@{Document\+Parser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDocumentParser_aa038283709a41bc286ae70593ece76ee}{Document\+Parser}} (\mbox{\hyperlink{classIndexHandler}{Index\+Handler}} $\ast$ih)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDocumentParser}{Document\+Parser}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocumentParser_aa385067d0e336601c422b6d64c664d39}{parse}} (std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em Parses .csv file and seperates fields into an array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDocumentParser_ae192e81639f4473998277136b3a821e5}{load\+Stop\+Words}} (std\+::string file\+Name)
+\begin{DoxyCompactList}\small\item\em Loads stop words from file and stores them in set. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classDocumentParser_a957a602ad41470adfc310f9f16d7c5e7}{question\+Lookup}} (int lookup\+ID, std\+::string document\+Path)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDocumentParser_aa038283709a41bc286ae70593ece76ee}\label{classDocumentParser_aa038283709a41bc286ae70593ece76ee}} 
+\index{Document\+Parser@{Document\+Parser}!Document\+Parser@{Document\+Parser}}
+\index{Document\+Parser@{Document\+Parser}!Document\+Parser@{Document\+Parser}}
+\subsubsection{\texorpdfstring{Document\+Parser()}{DocumentParser()}}
+{\footnotesize\ttfamily Document\+Parser\+::\+Document\+Parser (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIndexHandler}{Index\+Handler}} $\ast$}]{ih }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDocumentParser}{Document\+Parser}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Reference} & to index handler for adding words to an index \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDocumentParser_ae192e81639f4473998277136b3a821e5}\label{classDocumentParser_ae192e81639f4473998277136b3a821e5}} 
+\index{Document\+Parser@{Document\+Parser}!load\+Stop\+Words@{load\+Stop\+Words}}
+\index{load\+Stop\+Words@{load\+Stop\+Words}!Document\+Parser@{Document\+Parser}}
+\subsubsection{\texorpdfstring{load\+Stop\+Words()}{loadStopWords()}}
+{\footnotesize\ttfamily void Document\+Parser\+::load\+Stop\+Words (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Loads stop words from file and stores them in set. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDocumentParser_aa385067d0e336601c422b6d64c664d39}\label{classDocumentParser_aa385067d0e336601c422b6d64c664d39}} 
+\index{Document\+Parser@{Document\+Parser}!parse@{parse}}
+\index{parse@{parse}!Document\+Parser@{Document\+Parser}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily void Document\+Parser\+::parse (\begin{DoxyParamCaption}\item[{std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Parses .csv file and seperates fields into an array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Name} & of file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDocumentParser_a957a602ad41470adfc310f9f16d7c5e7}\label{classDocumentParser_a957a602ad41470adfc310f9f16d7c5e7}} 
+\index{Document\+Parser@{Document\+Parser}!question\+Lookup@{question\+Lookup}}
+\index{question\+Lookup@{question\+Lookup}!Document\+Parser@{Document\+Parser}}
+\subsubsection{\texorpdfstring{question\+Lookup()}{questionLookup()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Document\+Parser\+::question\+Lookup (\begin{DoxyParamCaption}\item[{int}]{lookup\+ID,  }\item[{std\+::string}]{document\+Path }\end{DoxyParamCaption})}
+
+Takes in file path and an ID to be searched and returns question information. Question information is returned as a vector. User needs to be prompted for path to document 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+documentparser.\+h\item 
+documentparser.\+cpp\end{DoxyCompactItemize}

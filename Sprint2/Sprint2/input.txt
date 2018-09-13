@@ -1,0 +1,31 @@
+<6>
+[yup]
+<7>
+hello [my name is.] michael
+<9>
+[YUP] this is a file
+<10>
+[yup,] dang homie
+<1>
+[dummy]
+<6>
+[yup]
+<7>
+hello [my name is.] michael
+<9>
+[YUP] this is a file
+<10>
+[yup,] dang homie
+<1>
+[dummy]
+<6>
+[yup]
+<7>
+hello [my name is.] michael
+<9>
+[YUP] this is a file
+<10>
+[yup,] dang homie
+<1>
+[dummy] 0
+<-1>

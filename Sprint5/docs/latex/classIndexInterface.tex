@@ -1,0 +1,64 @@
+\hypertarget{classIndexInterface}{}\section{Index\+Interface$<$ T $>$ Class Template Reference}
+\label{classIndexInterface}\index{Index\+Interface$<$ T $>$@{Index\+Interface$<$ T $>$}}
+Inheritance diagram for Index\+Interface$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIndexInterface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexInterface_ae1deeeb263b197a51d01cbf0fb16f966}\label{classIndexInterface_ae1deeeb263b197a51d01cbf0fb16f966}} 
+{\bfseries Index\+Interface} (const \mbox{\hyperlink{classIndexInterface}{Index\+Interface}}$<$ T $>$ \&)
+\item 
+\mbox{\Hypertarget{classIndexInterface_a1894dd48debd4093c62a21e5723f4bd2}\label{classIndexInterface_a1894dd48debd4093c62a21e5723f4bd2}} 
+\mbox{\hyperlink{classIndexInterface}{Index\+Interface}}$<$ T $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{classIndexInterface}{Index\+Interface}}$<$ T $>$ \&)
+\item 
+\mbox{\Hypertarget{classIndexInterface_aec8841accbbb89e650037a64ef6bd79a}\label{classIndexInterface_aec8841accbbb89e650037a64ef6bd79a}} 
+int {\bfseries get\+Num\+Questions} () const
+\item 
+\mbox{\Hypertarget{classIndexInterface_ac39c7591e3c5f61357c24579dfa4d5f3}\label{classIndexInterface_ac39c7591e3c5f61357c24579dfa4d5f3}} 
+void {\bfseries set\+Num\+Questions} (int questions\+Indexed)
+\item 
+\mbox{\Hypertarget{classIndexInterface_aea1ab18b0ed842716070f3167608c8ae}\label{classIndexInterface_aea1ab18b0ed842716070f3167608c8ae}} 
+virtual bool {\bfseries contains} (const T \&) const =0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a0338c1316aff03b55aaa929071a267c5}\label{classIndexInterface_a0338c1316aff03b55aaa929071a267c5}} 
+virtual std\+::pair$<$ T, bool $>$ {\bfseries search} (const T \&)=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_ad2582c9709ab02cfb10c3f6b2da85b3f}\label{classIndexInterface_ad2582c9709ab02cfb10c3f6b2da85b3f}} 
+virtual void {\bfseries insert} (const T \&)=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a631cf3bd60a77d52c1c7c53fc520cdad}\label{classIndexInterface_a631cf3bd60a77d52c1c7c53fc520cdad}} 
+virtual bool {\bfseries is\+Empty} () const =0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a91eb24f76a5c2d14aec1be34fb38e1ac}\label{classIndexInterface_a91eb24f76a5c2d14aec1be34fb38e1ac}} 
+virtual void {\bfseries make\+Empty} ()=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a9fcec55df60d05560f9da1aa26b13fd9}\label{classIndexInterface_a9fcec55df60d05560f9da1aa26b13fd9}} 
+virtual std\+::pair$<$ T, bool $>$ {\bfseries string\+Search} (const std\+::string \&)=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a6251d1376bd55e4db20d8129119d75d7}\label{classIndexInterface_a6251d1376bd55e4db20d8129119d75d7}} 
+virtual void {\bfseries string\+Insert} (const std\+::string \&, int, int, int)=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_a4897cb2ced701b463dd7d195e92ce3b4}\label{classIndexInterface_a4897cb2ced701b463dd7d195e92ce3b4}} 
+virtual std\+::ostream \& {\bfseries print} (std\+::ostream \&os) const
+\item 
+\mbox{\Hypertarget{classIndexInterface_a41fe3e677c672edb96328a236d85dcc5}\label{classIndexInterface_a41fe3e677c672edb96328a236d85dcc5}} 
+virtual std\+::vector$<$ T $>$ {\bfseries get\+Top\+Fifty} ()=0
+\item 
+\mbox{\Hypertarget{classIndexInterface_ad5de04ae546cb61f76ea4e3c9bf595f8}\label{classIndexInterface_ad5de04ae546cb61f76ea4e3c9bf595f8}} 
+virtual int {\bfseries get\+Terms} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexInterface_a4576a590014d3c4b541cd772fa3efec6}\label{classIndexInterface_a4576a590014d3c4b541cd772fa3efec6}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, const \mbox{\hyperlink{classIndexInterface}{Index\+Interface}}$<$ T $>$ \&ii)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+indexinterface.\+hpp\end{DoxyCompactItemize}

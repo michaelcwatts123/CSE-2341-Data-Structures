@@ -1,0 +1,203 @@
+\hypertarget{classHashTable}{}\section{Hash\+Table$<$ T $>$ Class Template Reference}
+\label{classHashTable}\index{Hash\+Table$<$ T $>$@{Hash\+Table$<$ T $>$}}
+Inheritance diagram for Hash\+Table$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classHashTable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHashTable_aaf597eeb450b75345dc8ec5061429d66}{Hash\+Table}} (int=1000000)
+\item 
+\mbox{\hyperlink{classHashTable_a4acb9708dd46d79a1a2aa45a64977a8b}{Hash\+Table}} (const \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \&)
+\item 
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \& \mbox{\hyperlink{classHashTable_a7db250d46e886751910efdb0e0ac7aad}{operator=}} (const \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \&)
+\item 
+bool \mbox{\hyperlink{classHashTable_ae30d145ec5047b093d27b7b7038a45fa}{contains}} (const T \&) const
+\item 
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable_abcc2c56c62a636f9163d934aa6881c57}{search}} (const T \&)
+\item 
+void \mbox{\hyperlink{classHashTable_a678593aba9238850142914bca5f97158}{insert}} (const T \&)
+\item 
+bool \mbox{\hyperlink{classHashTable_a3e2bab230f4dd25ba9510f49c5be2b36}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{classHashTable_aaed86109363c5412e7aeebeb0200fe44}{make\+Empty}} ()
+\item 
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable_a801997e4fd99d4054bbdff4002e6e63d}{string\+Search}} (const std\+::string \&)
+\item 
+void \mbox{\hyperlink{classHashTable_a48094fe05d264dcc5f2292b8ca7e2a4c}{string\+Insert}} (const std\+::string \&, int, int, int)
+\item 
+std\+::ostream \& \mbox{\hyperlink{classHashTable_a925e5d133027e366e6a05d584a04a92c}{print}} (std\+::ostream \&os) const
+\item 
+int \mbox{\hyperlink{classHashTable_a8b8869f3dc1b79fd2c4fb6488a44926c}{get\+Num\+Elements}} () const
+\item 
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable_a97088b8890aa3ef1403359d45b6260ce}{operator\mbox{[}$\,$\mbox{]}}} (const T \&)
+\item 
+std\+::vector$<$ T $>$ \mbox{\hyperlink{classHashTable_a6f5359b3b5b29414ef07fcb202b0ed28}{get\+Top\+Fifty}} ()
+\item 
+int \mbox{\hyperlink{classHashTable_a1da70d706b97754c2bd359d2f512b087}{get\+Terms}} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHashTable_aedd40d8c02fdaf28f43533eefff0e4f4}\label{classHashTable_aedd40d8c02fdaf28f43533eefff0e4f4}} 
+{\footnotesize template$<$class U $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ U $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHashTable_aaf597eeb450b75345dc8ec5061429d66}\label{classHashTable_aaf597eeb450b75345dc8ec5061429d66}} 
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{Hash\+Table()}{HashTable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::\mbox{\hyperlink{classHashTable}{Hash\+Table}} (\begin{DoxyParamCaption}\item[{int}]{size = {\ttfamily 1000000} }\end{DoxyParamCaption})}
+
+Default constructor initializes array \mbox{\Hypertarget{classHashTable_a4acb9708dd46d79a1a2aa45a64977a8b}\label{classHashTable_a4acb9708dd46d79a1a2aa45a64977a8b}} 
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\index{Hash\+Table@{Hash\+Table}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{Hash\+Table()}{HashTable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::\mbox{\hyperlink{classHashTable}{Hash\+Table}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+Copy constructor copies over elements of vector 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classHashTable_ae30d145ec5047b093d27b7b7038a45fa}\label{classHashTable_ae30d145ec5047b093d27b7b7038a45fa}} 
+\index{Hash\+Table@{Hash\+Table}!contains@{contains}}
+\index{contains@{contains}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::contains (\begin{DoxyParamCaption}\item[{const T \&}]{to\+Be\+Found }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines whether or not the table contains the given argument 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a8b8869f3dc1b79fd2c4fb6488a44926c}\label{classHashTable_a8b8869f3dc1b79fd2c4fb6488a44926c}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Num\+Elements@{get\+Num\+Elements}}
+\index{get\+Num\+Elements@{get\+Num\+Elements}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Num\+Elements()}{getNumElements()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::get\+Num\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of elements in the table \mbox{\Hypertarget{classHashTable_a1da70d706b97754c2bd359d2f512b087}\label{classHashTable_a1da70d706b97754c2bd359d2f512b087}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Terms@{get\+Terms}}
+\index{get\+Terms@{get\+Terms}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Terms()}{getTerms()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::get\+Terms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of elements indexed by the table 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a6f5359b3b5b29414ef07fcb202b0ed28}\label{classHashTable_a6f5359b3b5b29414ef07fcb202b0ed28}} 
+\index{Hash\+Table@{Hash\+Table}!get\+Top\+Fifty@{get\+Top\+Fifty}}
+\index{get\+Top\+Fifty@{get\+Top\+Fifty}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{get\+Top\+Fifty()}{getTopFifty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::vector$<$ T $>$ \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::get\+Top\+Fifty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a vector of the top fifty most common sords. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a678593aba9238850142914bca5f97158}\label{classHashTable_a678593aba9238850142914bca5f97158}} 
+\index{Hash\+Table@{Hash\+Table}!insert@{insert}}
+\index{insert@{insert}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{inserted }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Inserts new object to position given by hashing function 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a3e2bab230f4dd25ba9510f49c5be2b36}\label{classHashTable_a3e2bab230f4dd25ba9510f49c5be2b36}} 
+\index{Hash\+Table@{Hash\+Table}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines whether or not there are any elements in the table 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_aaed86109363c5412e7aeebeb0200fe44}\label{classHashTable_aaed86109363c5412e7aeebeb0200fe44}} 
+\index{Hash\+Table@{Hash\+Table}!make\+Empty@{make\+Empty}}
+\index{make\+Empty@{make\+Empty}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{make\+Empty()}{makeEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::make\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Clears table of all old elements 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a7db250d46e886751910efdb0e0ac7aad}\label{classHashTable_a7db250d46e886751910efdb0e0ac7aad}} 
+\index{Hash\+Table@{Hash\+Table}!operator=@{operator=}}
+\index{operator=@{operator=}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \& \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+Assignment operator copies over data if given argument is not identical \mbox{\Hypertarget{classHashTable_a97088b8890aa3ef1403359d45b6260ce}\label{classHashTable_a97088b8890aa3ef1403359d45b6260ce}} 
+\index{Hash\+Table@{Hash\+Table}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{const T \&}]{sought }\end{DoxyParamCaption})}
+
+Subscript operator accepts argument of type template parameter and returns object stored at that key in the table \mbox{\Hypertarget{classHashTable_a925e5d133027e366e6a05d584a04a92c}\label{classHashTable_a925e5d133027e366e6a05d584a04a92c}} 
+\index{Hash\+Table@{Hash\+Table}!print@{print}}
+\index{print@{print}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::ostream \& \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints all elements in table in order of hash value 
+
+Reimplemented from \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_abcc2c56c62a636f9163d934aa6881c57}\label{classHashTable_abcc2c56c62a636f9163d934aa6881c57}} 
+\index{Hash\+Table@{Hash\+Table}!search@{search}}
+\index{search@{search}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::search (\begin{DoxyParamCaption}\item[{const T \&}]{sought }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns pair with the sought object and a boolean flag indicating whether or not it was found 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a48094fe05d264dcc5f2292b8ca7e2a4c}\label{classHashTable_a48094fe05d264dcc5f2292b8ca7e2a4c}} 
+\index{Hash\+Table@{Hash\+Table}!string\+Insert@{string\+Insert}}
+\index{string\+Insert@{string\+Insert}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{string\+Insert()}{stringInsert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::string\+Insert (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word,  }\item[{int}]{id,  }\item[{int}]{freq,  }\item[{int}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Searches for a term matching the given string in the index. If found, appends the data to that term. If not, inserts it to the index. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classHashTable_a801997e4fd99d4054bbdff4002e6e63d}\label{classHashTable_a801997e4fd99d4054bbdff4002e6e63d}} 
+\index{Hash\+Table@{Hash\+Table}!string\+Search@{string\+Search}}
+\index{string\+Search@{string\+Search}!Hash\+Table@{Hash\+Table}}
+\subsubsection{\texorpdfstring{string\+Search()}{stringSearch()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classHashTable}{Hash\+Table}}$<$ T $>$\+::string\+Search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Searches the index for an index whose key matches the string passed as argument. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+hashtable.\+hpp\end{DoxyCompactItemize}

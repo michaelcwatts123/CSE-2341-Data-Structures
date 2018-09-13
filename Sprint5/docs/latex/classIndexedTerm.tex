@@ -1,0 +1,201 @@
+\hypertarget{classIndexedTerm}{}\section{Indexed\+Term Class Reference}
+\label{classIndexedTerm}\index{Indexed\+Term@{Indexed\+Term}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexedTerm_af4607f12639a14652e3ed27585d636b5}\label{classIndexedTerm_af4607f12639a14652e3ed27585d636b5}} 
+{\bfseries Indexed\+Term} (std\+::string=\char`\"{}\char`\"{})
+\item 
+\mbox{\Hypertarget{classIndexedTerm_ad3ff525566ada45119cc4d044e4733e6}\label{classIndexedTerm_ad3ff525566ada45119cc4d044e4733e6}} 
+{\bfseries Indexed\+Term} (std\+::string, int, int, int)
+\item 
+std\+::string \mbox{\hyperlink{classIndexedTerm_a6e41546c9874e5382b969c41e87c3d8b}{get\+Term}} () const
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_aeb3a182538b603b10819d6b3310f6747}{is\+Empty}} () const
+\item 
+int \mbox{\hyperlink{classIndexedTerm_a10df671670e9581f273a7248ca5cbe4b}{get\+Frequency}} (int) const
+\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classIndexedTerm_a195c332d821640539eadeca10514cc82}{get\+Locations}} (int) const
+\item 
+std\+::set$<$ int $>$ \mbox{\hyperlink{classIndexedTerm_a585907deff7738139894dd45afa11a63}{get\+Question\+Ids}} () const
+\item 
+void \mbox{\hyperlink{classIndexedTerm_aa55a9b814c7b084b2e33fb57aa81efaf}{add\+Question}} (int)
+\item 
+void \mbox{\hyperlink{classIndexedTerm_a766b250a2e276ddd3270e1eb19d1d10d}{remove\+Question}} (int)
+\item 
+std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ \mbox{\hyperlink{classIndexedTerm_acbffdf0e7324840c5157ff18f3de67cc}{print15}} ()
+\begin{DoxyCompactList}\small\item\em Prints the first 15 values of the sorted Vector of results. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIndexedTerm_a923c8542c47170f848610bd7132eb71d}{sort}} (std\+::vector$<$ question\+Index $>$ \&, int)
+\item 
+\mbox{\Hypertarget{classIndexedTerm_a59228c1c0333e71bc7fbed72aae7cfdf}\label{classIndexedTerm_a59228c1c0333e71bc7fbed72aae7cfdf}} 
+\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} {\bfseries question\+And} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\item 
+\mbox{\Hypertarget{classIndexedTerm_a94bc68700a69aa4ef5595c42cacb9aa5}\label{classIndexedTerm_a94bc68700a69aa4ef5595c42cacb9aa5}} 
+\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} {\bfseries question\+Or} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_a1b78549f18a68457fcd438ca33d7ab87}{is\+In\+Question}} (int) const
+\item 
+void \mbox{\hyperlink{classIndexedTerm_acb1a3eebd31bfa50c78ce0371ec7d444}{add\+Location}} (int, int)
+\item 
+void \mbox{\hyperlink{classIndexedTerm_ac0b5314a66c032780ffcd9d4f9a1d01b}{remove\+Location}} (int, int)
+\item 
+void \mbox{\hyperlink{classIndexedTerm_a34d9c26b92764dee339e754264bf6343}{add\+Frequency}} (int, int)
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_ae39f762b1fce474a50bde0a411d34f70}{is\+At\+Location}} (int, int) const
+\item 
+void \mbox{\hyperlink{classIndexedTerm_ad5b7b07b86c72b049c30204531b5cf53}{append\+Data}} (int, int, int) const
+\item 
+\mbox{\Hypertarget{classIndexedTerm_ad4db70e1ba7defe2c32e00987635d0b3}\label{classIndexedTerm_ad4db70e1ba7defe2c32e00987635d0b3}} 
+int {\bfseries get\+Total\+Freq} () const
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_ae8a7856cb7afd5b7029df2a47bf3c378}{operator==}} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\item 
+void \mbox{\hyperlink{classIndexedTerm_a826c10c65c29cb7128e485906f884d31}{operator+=}} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_a770d1caf59facdb5694493aa57123abb}{operator$>$}} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\item 
+bool \mbox{\hyperlink{classIndexedTerm_aab009480a31b3f9ab1e1d712cf9f8298}{operator$<$}} (const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&) const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexedTerm_a56eb771de7ee127bd3a872942ab50d55}\label{classIndexedTerm_a56eb771de7ee127bd3a872942ab50d55}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&os, \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} it)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndexedTerm_a34d9c26b92764dee339e754264bf6343}\label{classIndexedTerm_a34d9c26b92764dee339e754264bf6343}} 
+\index{Indexed\+Term@{Indexed\+Term}!add\+Frequency@{add\+Frequency}}
+\index{add\+Frequency@{add\+Frequency}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{add\+Frequency()}{addFrequency()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::add\+Frequency (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{int}]{frequency }\end{DoxyParamCaption})}
+
+Adds frequency to frequency of specified question \mbox{\Hypertarget{classIndexedTerm_acb1a3eebd31bfa50c78ce0371ec7d444}\label{classIndexedTerm_acb1a3eebd31bfa50c78ce0371ec7d444}} 
+\index{Indexed\+Term@{Indexed\+Term}!add\+Location@{add\+Location}}
+\index{add\+Location@{add\+Location}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{add\+Location()}{addLocation()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::add\+Location (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{int}]{location }\end{DoxyParamCaption})}
+
+Adds location to location vector of specified question \mbox{\Hypertarget{classIndexedTerm_aa55a9b814c7b084b2e33fb57aa81efaf}\label{classIndexedTerm_aa55a9b814c7b084b2e33fb57aa81efaf}} 
+\index{Indexed\+Term@{Indexed\+Term}!add\+Question@{add\+Question}}
+\index{add\+Question@{add\+Question}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{add\+Question()}{addQuestion()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::add\+Question (\begin{DoxyParamCaption}\item[{int}]{question\+Id }\end{DoxyParamCaption})}
+
+Adds question\+Id to the set of questions this term is found in. \mbox{\Hypertarget{classIndexedTerm_ad5b7b07b86c72b049c30204531b5cf53}\label{classIndexedTerm_ad5b7b07b86c72b049c30204531b5cf53}} 
+\index{Indexed\+Term@{Indexed\+Term}!append\+Data@{append\+Data}}
+\index{append\+Data@{append\+Data}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{append\+Data()}{appendData()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::append\+Data (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{int}]{frequency,  }\item[{int}]{location }\end{DoxyParamCaption}) const}
+
+Appends all data associated with a particular question to the term. \mbox{\Hypertarget{classIndexedTerm_a10df671670e9581f273a7248ca5cbe4b}\label{classIndexedTerm_a10df671670e9581f273a7248ca5cbe4b}} 
+\index{Indexed\+Term@{Indexed\+Term}!get\+Frequency@{get\+Frequency}}
+\index{get\+Frequency@{get\+Frequency}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{get\+Frequency()}{getFrequency()}}
+{\footnotesize\ttfamily int Indexed\+Term\+::get\+Frequency (\begin{DoxyParamCaption}\item[{int}]{question\+ID }\end{DoxyParamCaption}) const}
+
+Retrieves the frequency of the question ID passed as argument; returns 0 if not present. \mbox{\Hypertarget{classIndexedTerm_a195c332d821640539eadeca10514cc82}\label{classIndexedTerm_a195c332d821640539eadeca10514cc82}} 
+\index{Indexed\+Term@{Indexed\+Term}!get\+Locations@{get\+Locations}}
+\index{get\+Locations@{get\+Locations}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{get\+Locations()}{getLocations()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Indexed\+Term\+::get\+Locations (\begin{DoxyParamCaption}\item[{int}]{question\+Id }\end{DoxyParamCaption}) const}
+
+Returns the vector of locations attached to the given question ID. \mbox{\Hypertarget{classIndexedTerm_a585907deff7738139894dd45afa11a63}\label{classIndexedTerm_a585907deff7738139894dd45afa11a63}} 
+\index{Indexed\+Term@{Indexed\+Term}!get\+Question\+Ids@{get\+Question\+Ids}}
+\index{get\+Question\+Ids@{get\+Question\+Ids}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{get\+Question\+Ids()}{getQuestionIds()}}
+{\footnotesize\ttfamily std\+::set$<$ int $>$ Indexed\+Term\+::get\+Question\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a set of all of the question I\+Ds that this term is found in \mbox{\Hypertarget{classIndexedTerm_a6e41546c9874e5382b969c41e87c3d8b}\label{classIndexedTerm_a6e41546c9874e5382b969c41e87c3d8b}} 
+\index{Indexed\+Term@{Indexed\+Term}!get\+Term@{get\+Term}}
+\index{get\+Term@{get\+Term}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{get\+Term()}{getTerm()}}
+{\footnotesize\ttfamily std\+::string Indexed\+Term\+::get\+Term (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets value of search term \mbox{\Hypertarget{classIndexedTerm_ae39f762b1fce474a50bde0a411d34f70}\label{classIndexedTerm_ae39f762b1fce474a50bde0a411d34f70}} 
+\index{Indexed\+Term@{Indexed\+Term}!is\+At\+Location@{is\+At\+Location}}
+\index{is\+At\+Location@{is\+At\+Location}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{is\+At\+Location()}{isAtLocation()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::is\+At\+Location (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{int}]{location }\end{DoxyParamCaption}) const}
+
+Determines whether or not the term appears in the given question at the given location. \mbox{\Hypertarget{classIndexedTerm_aeb3a182538b603b10819d6b3310f6747}\label{classIndexedTerm_aeb3a182538b603b10819d6b3310f6747}} 
+\index{Indexed\+Term@{Indexed\+Term}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Determines whether or not the set of question I\+Ds is empty \mbox{\Hypertarget{classIndexedTerm_a1b78549f18a68457fcd438ca33d7ab87}\label{classIndexedTerm_a1b78549f18a68457fcd438ca33d7ab87}} 
+\index{Indexed\+Term@{Indexed\+Term}!is\+In\+Question@{is\+In\+Question}}
+\index{is\+In\+Question@{is\+In\+Question}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{is\+In\+Question()}{isInQuestion()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::is\+In\+Question (\begin{DoxyParamCaption}\item[{int}]{question\+Id }\end{DoxyParamCaption}) const}
+
+Returns true if term is in question, false if not \mbox{\Hypertarget{classIndexedTerm_a826c10c65c29cb7128e485906f884d31}\label{classIndexedTerm_a826c10c65c29cb7128e485906f884d31}} 
+\index{Indexed\+Term@{Indexed\+Term}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Addition Assignment Operator adds question ID to list if it isn\textquotesingle{}t there, if it is present, adds frequency \mbox{\Hypertarget{classIndexedTerm_aab009480a31b3f9ab1e1d712cf9f8298}\label{classIndexedTerm_aab009480a31b3f9ab1e1d712cf9f8298}} 
+\index{Indexed\+Term@{Indexed\+Term}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::operator$<$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Compares the terms using lexicographical comparison of the A\+S\+C\+II values of each character in the string. \mbox{\Hypertarget{classIndexedTerm_ae8a7856cb7afd5b7029df2a47bf3c378}\label{classIndexedTerm_ae8a7856cb7afd5b7029df2a47bf3c378}} 
+\index{Indexed\+Term@{Indexed\+Term}!operator==@{operator==}}
+\index{operator==@{operator==}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Equality operator checks keys (terms) for equality \mbox{\Hypertarget{classIndexedTerm_a770d1caf59facdb5694493aa57123abb}\label{classIndexedTerm_a770d1caf59facdb5694493aa57123abb}} 
+\index{Indexed\+Term@{Indexed\+Term}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}}
+{\footnotesize\ttfamily bool Indexed\+Term\+::operator$>$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+Compares the terms using lexicographical comparison of the A\+S\+C\+II values of each character in the string. \mbox{\Hypertarget{classIndexedTerm_acbffdf0e7324840c5157ff18f3de67cc}\label{classIndexedTerm_acbffdf0e7324840c5157ff18f3de67cc}} 
+\index{Indexed\+Term@{Indexed\+Term}!print15@{print15}}
+\index{print15@{print15}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{print15()}{print15()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::pair$<$ int, int $>$ $>$ Indexed\+Term\+::print15 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the first 15 values of the sorted Vector of results. 
+
+\begin{DoxyReturn}{Returns}
+a vector of pairs containing question\+I\+Ds and and frequencies of a term 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndexedTerm_ac0b5314a66c032780ffcd9d4f9a1d01b}\label{classIndexedTerm_ac0b5314a66c032780ffcd9d4f9a1d01b}} 
+\index{Indexed\+Term@{Indexed\+Term}!remove\+Location@{remove\+Location}}
+\index{remove\+Location@{remove\+Location}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{remove\+Location()}{removeLocation()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::remove\+Location (\begin{DoxyParamCaption}\item[{int}]{question\+Id,  }\item[{int}]{location }\end{DoxyParamCaption})}
+
+Removes location from location vector of specified question \mbox{\Hypertarget{classIndexedTerm_a766b250a2e276ddd3270e1eb19d1d10d}\label{classIndexedTerm_a766b250a2e276ddd3270e1eb19d1d10d}} 
+\index{Indexed\+Term@{Indexed\+Term}!remove\+Question@{remove\+Question}}
+\index{remove\+Question@{remove\+Question}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{remove\+Question()}{removeQuestion()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::remove\+Question (\begin{DoxyParamCaption}\item[{int}]{question\+Id }\end{DoxyParamCaption})}
+
+Removes the specified question from the set if there or throws error if not \mbox{\Hypertarget{classIndexedTerm_a923c8542c47170f848610bd7132eb71d}\label{classIndexedTerm_a923c8542c47170f848610bd7132eb71d}} 
+\index{Indexed\+Term@{Indexed\+Term}!sort@{sort}}
+\index{sort@{sort}!Indexed\+Term@{Indexed\+Term}}
+\subsubsection{\texorpdfstring{sort()}{sort()}}
+{\footnotesize\ttfamily void Indexed\+Term\+::sort (\begin{DoxyParamCaption}\item[{std\+::vector$<$ question\+Index $>$ \&}]{output,  }\item[{int}]{position }\end{DoxyParamCaption})}
+
+Sorts a vector in descending order 
+\begin{DoxyParams}{Parameters}
+{\em the} & vector to sort \\
+\hline
+{\em the} & location to begin sorting \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+indexedterm.\+h\item 
+indexedterm.\+cpp\end{DoxyCompactItemize}

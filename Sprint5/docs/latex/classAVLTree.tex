@@ -1,0 +1,181 @@
+\hypertarget{classAVLTree}{}\section{A\+V\+L\+Tree$<$ T $>$ Class Template Reference}
+\label{classAVLTree}\index{A\+V\+L\+Tree$<$ T $>$@{A\+V\+L\+Tree$<$ T $>$}}
+
+
+{\ttfamily \#include $<$avltree.\+hpp$>$}
+
+Inheritance diagram for A\+V\+L\+Tree$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classAVLTree}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVLTree_ae060c99e3cbf028cf2cc3dbae477baeb}\label{classAVLTree_ae060c99e3cbf028cf2cc3dbae477baeb}} 
+{\bfseries A\+V\+L\+Tree} (const \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$ \&)
+\item 
+\mbox{\Hypertarget{classAVLTree_a323cd174756feb69b5e164d712bfc13f}\label{classAVLTree_a323cd174756feb69b5e164d712bfc13f}} 
+\mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$ \& {\bfseries operator=} (const \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$ \&)
+\item 
+bool \mbox{\hyperlink{classAVLTree_afe724de4c687945d687d7013f4447d20}{contains}} (const T \&) const
+\item 
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classAVLTree_abc89056d84bd8b7f625f0716788154fb}{search}} (const T \&)
+\item 
+void \mbox{\hyperlink{classAVLTree_a5b8d9bac5800aec72c175c74391f7027}{insert}} (const T \&)
+\item 
+bool \mbox{\hyperlink{classAVLTree_a0203b5672172acbb9085d75f37fb674e}{is\+Empty}} () const
+\item 
+void \mbox{\hyperlink{classAVLTree_ab7062b17bcc409f0b9200671482fad01}{make\+Empty}} ()
+\item 
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classAVLTree_a2564e8382d86688fca442f3ef960612d}{string\+Search}} (const std\+::string \&)
+\item 
+void \mbox{\hyperlink{classAVLTree_a241b96e4c35403cabdc44c4781326721}{string\+Insert}} (const std\+::string \&, int, int, int)
+\item 
+T \& \mbox{\hyperlink{classAVLTree_a2bae23bdf0a05bdfa8c7b77ea46b5d3e}{find\+Max}} ()
+\item 
+T \& \mbox{\hyperlink{classAVLTree_a3cb9a9b85e4955d79e706f2e589dfc70}{find\+Min}} ()
+\item 
+std\+::ostream \& \mbox{\hyperlink{classAVLTree_af5299ff77e912f72481679bf9f380810}{print}} (std\+::ostream \&) const
+\item 
+\mbox{\Hypertarget{classAVLTree_afe1878e13d4f856c915cee90dfd60f86}\label{classAVLTree_afe1878e13d4f856c915cee90dfd60f86}} 
+std\+::vector$<$ T $>$ {\bfseries get\+Top\+Fifty} ()
+\item 
+int \mbox{\hyperlink{classAVLTree_aef337841336fe9e42e4575283139b205}{get\+Terms}} () const
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classAVLTree_ab87e89a876f46efe5d304239c352e804}\label{classAVLTree_ab87e89a876f46efe5d304239c352e804}} 
+{\footnotesize template$<$class U $>$ }\\std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&, const \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ U $>$ \&)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class A\+V\+L\+Tree$<$ T $>$}
+
+Implements an ordered index as a self-\/balancing A\+VL binary tree.
+
+Also assumes that any values passed in are unique or can have data appended to them with operator+= without changing their ordering. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAVLTree_afe724de4c687945d687d7013f4447d20}\label{classAVLTree_afe724de4c687945d687d7013f4447d20}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!contains@{contains}}
+\index{contains@{contains}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::contains (\begin{DoxyParamCaption}\item[{const T \&}]{arg }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines whether or not the passed argument is an element of the tree 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_a2bae23bdf0a05bdfa8c7b77ea46b5d3e}\label{classAVLTree_a2bae23bdf0a05bdfa8c7b77ea46b5d3e}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!find\+Max@{find\+Max}}
+\index{find\+Max@{find\+Max}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{find\+Max()}{findMax()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::find\+Max (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the maximum value contained in the tree. \mbox{\Hypertarget{classAVLTree_a3cb9a9b85e4955d79e706f2e589dfc70}\label{classAVLTree_a3cb9a9b85e4955d79e706f2e589dfc70}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!find\+Min@{find\+Min}}
+\index{find\+Min@{find\+Min}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{find\+Min()}{findMin()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::find\+Min (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the minimum value contained in the tree. \mbox{\Hypertarget{classAVLTree_aef337841336fe9e42e4575283139b205}\label{classAVLTree_aef337841336fe9e42e4575283139b205}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!get\+Terms@{get\+Terms}}
+\index{get\+Terms@{get\+Terms}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{get\+Terms()}{getTerms()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::get\+Terms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns the number of terms that have been indexed by the tree 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_a5b8d9bac5800aec72c175c74391f7027}\label{classAVLTree_a5b8d9bac5800aec72c175c74391f7027}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!insert@{insert}}
+\index{insert@{insert}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::insert (\begin{DoxyParamCaption}\item[{const T \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Determines where a passed value should be inserted into the tree and inserts there. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_a0203b5672172acbb9085d75f37fb674e}\label{classAVLTree_a0203b5672172acbb9085d75f37fb674e}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns true if tree is empty, false if not. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_ab7062b17bcc409f0b9200671482fad01}\label{classAVLTree_ab7062b17bcc409f0b9200671482fad01}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!make\+Empty@{make\+Empty}}
+\index{make\+Empty@{make\+Empty}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{make\+Empty()}{makeEmpty()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::make\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Empties the tree and frees all allocated memory 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_af5299ff77e912f72481679bf9f380810}\label{classAVLTree_af5299ff77e912f72481679bf9f380810}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!print@{print}}
+\index{print@{print}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::ostream \& \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Prints contents of the tree according to a level-\/order traversal 
+
+Reimplemented from \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_abc89056d84bd8b7f625f0716788154fb}\label{classAVLTree_abc89056d84bd8b7f625f0716788154fb}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!search@{search}}
+\index{search@{search}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::search (\begin{DoxyParamCaption}\item[{const T \&}]{arg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Searches for the passed value and returns that data from the tree if it is there. If not, indicates with a false value. 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_a241b96e4c35403cabdc44c4781326721}\label{classAVLTree_a241b96e4c35403cabdc44c4781326721}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!string\+Insert@{string\+Insert}}
+\index{string\+Insert@{string\+Insert}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{string\+Insert()}{stringInsert()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::string\+Insert (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word,  }\item[{int}]{id,  }\item[{int}]{freq,  }\item[{int}]{loc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Inserts a string to the index based on its string key 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+\mbox{\Hypertarget{classAVLTree_a2564e8382d86688fca442f3ef960612d}\label{classAVLTree_a2564e8382d86688fca442f3ef960612d}} 
+\index{A\+V\+L\+Tree@{A\+V\+L\+Tree}!string\+Search@{string\+Search}}
+\index{string\+Search@{string\+Search}!A\+V\+L\+Tree@{A\+V\+L\+Tree}}
+\subsubsection{\texorpdfstring{string\+Search()}{stringSearch()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::pair$<$ T, bool $>$ \mbox{\hyperlink{classAVLTree}{A\+V\+L\+Tree}}$<$ T $>$\+::string\+Search (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{word }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Searches the tree for Indexed\+Terms based on their string keys 
+
+Implements \mbox{\hyperlink{classIndexInterface}{Index\+Interface$<$ T $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+avltree.\+hpp\end{DoxyCompactItemize}

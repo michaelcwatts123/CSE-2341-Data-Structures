@@ -1,0 +1,102 @@
+\hypertarget{classrunQuery}{}\section{run\+Query Class Reference}
+\label{classrunQuery}\index{run\+Query@{run\+Query}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrunQuery_aaad75dd6d53bfb24bba2ec0b7810f40a}{run\+Query}} ()
+\item 
+\mbox{\hyperlink{classrunQuery_aaef36fd53a33a7c44ee6ef206779dda9}{run\+Query}} (string)
+\begin{DoxyCompactList}\small\item\em Searches index for and returns results of Query. \end{DoxyCompactList}\item 
+pair$<$ string, string $>$ \mbox{\hyperlink{classrunQuery_a8bfd9815fef1929543a6b5b200b6a262}{delimit}} (string s)
+\begin{DoxyCompactList}\small\item\em splits bracketed phrases into indivudal strings \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} \mbox{\hyperlink{classrunQuery_ad5641a6335515ddeca95c1db2303c9b8}{bracket\+Logic}} (\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}}, \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}})
+\begin{DoxyCompactList}\small\item\em Handles logic for terms which are bracketed together by and-\/ing the two indivudal terms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classrunQuery_a19dcf052ec0adb8c4ed4df0b11094a53}{and\+Logic}} ()
+\begin{DoxyCompactList}\small\item\em Handles logic to And terms together by multiplying the score of terms and-\/ed together. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classrunQuery_abd6883a84fde9aba285fa3968bdc607c}\label{classrunQuery_abd6883a84fde9aba285fa3968bdc607c}} 
+void {\bfseries or\+Logic} ()
+\item 
+\mbox{\Hypertarget{classrunQuery_ad34874f4e2d31ee29279a4b89faaae3b}\label{classrunQuery_ad34874f4e2d31ee29279a4b89faaae3b}} 
+void \mbox{\hyperlink{classrunQuery_ad34874f4e2d31ee29279a4b89faaae3b}{not\+Logic}} ()
+\begin{DoxyCompactList}\small\item\em Handles logic to not terms together by modifying the score of notted terms to be very small. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrunQuery_aaad75dd6d53bfb24bba2ec0b7810f40a}\label{classrunQuery_aaad75dd6d53bfb24bba2ec0b7810f40a}} 
+\index{run\+Query@{run\+Query}!run\+Query@{run\+Query}}
+\index{run\+Query@{run\+Query}!run\+Query@{run\+Query}}
+\subsubsection{\texorpdfstring{run\+Query()}{runQuery()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily run\+Query\+::run\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \mbox{\Hypertarget{classrunQuery_aaef36fd53a33a7c44ee6ef206779dda9}\label{classrunQuery_aaef36fd53a33a7c44ee6ef206779dda9}} 
+\index{run\+Query@{run\+Query}!run\+Query@{run\+Query}}
+\index{run\+Query@{run\+Query}!run\+Query@{run\+Query}}
+\subsubsection{\texorpdfstring{run\+Query()}{runQuery()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily run\+Query\+::run\+Query (\begin{DoxyParamCaption}\item[{string}]{index\+Type }\end{DoxyParamCaption})}
+
+
+
+Searches index for and returns results of Query. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & name of the type of index to form \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrunQuery_a19dcf052ec0adb8c4ed4df0b11094a53}\label{classrunQuery_a19dcf052ec0adb8c4ed4df0b11094a53}} 
+\index{run\+Query@{run\+Query}!and\+Logic@{and\+Logic}}
+\index{and\+Logic@{and\+Logic}!run\+Query@{run\+Query}}
+\subsubsection{\texorpdfstring{and\+Logic()}{andLogic()}}
+{\footnotesize\ttfamily void run\+Query\+::and\+Logic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles logic to And terms together by multiplying the score of terms and-\/ed together. 
+
+Handles logic to Or terms together by adding the scores of terms or-\/ed together\mbox{\Hypertarget{classrunQuery_ad5641a6335515ddeca95c1db2303c9b8}\label{classrunQuery_ad5641a6335515ddeca95c1db2303c9b8}} 
+\index{run\+Query@{run\+Query}!bracket\+Logic@{bracket\+Logic}}
+\index{bracket\+Logic@{bracket\+Logic}!run\+Query@{run\+Query}}
+\subsubsection{\texorpdfstring{bracket\+Logic()}{bracketLogic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} run\+Query\+::bracket\+Logic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}}}]{t1,  }\item[{\mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}}}]{t2 }\end{DoxyParamCaption})}
+
+
+
+Handles logic for terms which are bracketed together by and-\/ing the two indivudal terms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & first \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} of the bracketed phrase \\
+\hline
+{\em the} & second \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}} of the bracketed phrase \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Indexed phrase holding all the question\+I\+Ds the terms share with inflated frequencies 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrunQuery_a8bfd9815fef1929543a6b5b200b6a262}\label{classrunQuery_a8bfd9815fef1929543a6b5b200b6a262}} 
+\index{run\+Query@{run\+Query}!delimit@{delimit}}
+\index{delimit@{delimit}!run\+Query@{run\+Query}}
+\subsubsection{\texorpdfstring{delimit()}{delimit()}}
+{\footnotesize\ttfamily pair$<$ string, string $>$ run\+Query\+::delimit (\begin{DoxyParamCaption}\item[{string}]{s }\end{DoxyParamCaption})}
+
+
+
+splits bracketed phrases into indivudal strings 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & string to split into two strings \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a pair of strings containing each term 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+runquery.\+h\item 
+runquery.\+cpp\end{DoxyCompactItemize}

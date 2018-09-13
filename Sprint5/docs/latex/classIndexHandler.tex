@@ -1,0 +1,84 @@
+\hypertarget{classIndexHandler}{}\section{Index\+Handler Class Reference}
+\label{classIndexHandler}\index{Index\+Handler@{Index\+Handler}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndexHandler_a1aebfba11f366ea373ac14bfcf6d87bb}\label{classIndexHandler_a1aebfba11f366ea373ac14bfcf6d87bb}} 
+{\bfseries Index\+Handler} (std\+::string=\char`\"{}hash\char`\"{})
+\item 
+void \mbox{\hyperlink{classIndexHandler_a9d47f3335596c1e7e1cdffa7f47700d2}{add\+To\+Index}} (std\+::string, int, int, int)
+\item 
+std\+::pair$<$ \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}}, bool $>$ \mbox{\hyperlink{classIndexHandler_a1592db23c246bf89a8f7c3e588eb9594}{search\+Index}} (std\+::string)
+\item 
+void \mbox{\hyperlink{classIndexHandler_a54590047896406242794a9a614018d17}{set\+Num\+Questions}} (int)
+\item 
+void \mbox{\hyperlink{classIndexHandler_a3f0c13dfe129c5a3b02d16b2aa6f1e0f}{write\+To\+Disk}} ()
+\item 
+void \mbox{\hyperlink{classIndexHandler_a17ca15b3387355de1ad529c91c3f0667}{read\+From\+Disk}} ()
+\item 
+void \mbox{\hyperlink{classIndexHandler_ab94847987a3df0a1c52ceba59679b9ff}{update\+Top\+Fifty}} ()
+\item 
+int \mbox{\hyperlink{classIndexHandler_a2d1efa0d8e42f602f8fa4d51e4d25dfb}{get\+Num\+Terms}} () const
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classIndexHandler_a44cd905cd7699cbdc629dcd4ec934ec5}{get\+Top\+Fifty}} ()
+\item 
+\mbox{\Hypertarget{classIndexHandler_a76059ad1aec62c6ae12f16613c899936}\label{classIndexHandler_a76059ad1aec62c6ae12f16613c899936}} 
+int {\bfseries get\+Questions\+Indexed} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndexHandler_a9d47f3335596c1e7e1cdffa7f47700d2}\label{classIndexHandler_a9d47f3335596c1e7e1cdffa7f47700d2}} 
+\index{Index\+Handler@{Index\+Handler}!add\+To\+Index@{add\+To\+Index}}
+\index{add\+To\+Index@{add\+To\+Index}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{add\+To\+Index()}{addToIndex()}}
+{\footnotesize\ttfamily void Index\+Handler\+::add\+To\+Index (\begin{DoxyParamCaption}\item[{std\+::string}]{term,  }\item[{int}]{question\+Id,  }\item[{int}]{frequency,  }\item[{int}]{location }\end{DoxyParamCaption})}
+
+Adds an object with the specified term, question ID, and frequency to the index. \mbox{\Hypertarget{classIndexHandler_a2d1efa0d8e42f602f8fa4d51e4d25dfb}\label{classIndexHandler_a2d1efa0d8e42f602f8fa4d51e4d25dfb}} 
+\index{Index\+Handler@{Index\+Handler}!get\+Num\+Terms@{get\+Num\+Terms}}
+\index{get\+Num\+Terms@{get\+Num\+Terms}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{get\+Num\+Terms()}{getNumTerms()}}
+{\footnotesize\ttfamily int Index\+Handler\+::get\+Num\+Terms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns the number of terms indexed by the index \mbox{\Hypertarget{classIndexHandler_a44cd905cd7699cbdc629dcd4ec934ec5}\label{classIndexHandler_a44cd905cd7699cbdc629dcd4ec934ec5}} 
+\index{Index\+Handler@{Index\+Handler}!get\+Top\+Fifty@{get\+Top\+Fifty}}
+\index{get\+Top\+Fifty@{get\+Top\+Fifty}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{get\+Top\+Fifty()}{getTopFifty()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Index\+Handler\+::get\+Top\+Fifty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the top fifty terms \mbox{\Hypertarget{classIndexHandler_a17ca15b3387355de1ad529c91c3f0667}\label{classIndexHandler_a17ca15b3387355de1ad529c91c3f0667}} 
+\index{Index\+Handler@{Index\+Handler}!read\+From\+Disk@{read\+From\+Disk}}
+\index{read\+From\+Disk@{read\+From\+Disk}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{read\+From\+Disk()}{readFromDisk()}}
+{\footnotesize\ttfamily void Index\+Handler\+::read\+From\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Reads the index from a persistent file location in disk \mbox{\Hypertarget{classIndexHandler_a1592db23c246bf89a8f7c3e588eb9594}\label{classIndexHandler_a1592db23c246bf89a8f7c3e588eb9594}} 
+\index{Index\+Handler@{Index\+Handler}!search\+Index@{search\+Index}}
+\index{search\+Index@{search\+Index}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{search\+Index()}{searchIndex()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{classIndexedTerm}{Indexed\+Term}}, bool $>$ Index\+Handler\+::search\+Index (\begin{DoxyParamCaption}\item[{std\+::string}]{to\+Be\+Found }\end{DoxyParamCaption})}
+
+Searches the index for the specified term. \mbox{\Hypertarget{classIndexHandler_a54590047896406242794a9a614018d17}\label{classIndexHandler_a54590047896406242794a9a614018d17}} 
+\index{Index\+Handler@{Index\+Handler}!set\+Num\+Questions@{set\+Num\+Questions}}
+\index{set\+Num\+Questions@{set\+Num\+Questions}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{set\+Num\+Questions()}{setNumQuestions()}}
+{\footnotesize\ttfamily void Index\+Handler\+::set\+Num\+Questions (\begin{DoxyParamCaption}\item[{int}]{num\+Questions }\end{DoxyParamCaption})}
+
+Sets the number of questions tracker in the index \mbox{\Hypertarget{classIndexHandler_ab94847987a3df0a1c52ceba59679b9ff}\label{classIndexHandler_ab94847987a3df0a1c52ceba59679b9ff}} 
+\index{Index\+Handler@{Index\+Handler}!update\+Top\+Fifty@{update\+Top\+Fifty}}
+\index{update\+Top\+Fifty@{update\+Top\+Fifty}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{update\+Top\+Fifty()}{updateTopFifty()}}
+{\footnotesize\ttfamily void Index\+Handler\+::update\+Top\+Fifty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Updates the top fifty elements of the index to a top fifty usable to the user. \mbox{\Hypertarget{classIndexHandler_a3f0c13dfe129c5a3b02d16b2aa6f1e0f}\label{classIndexHandler_a3f0c13dfe129c5a3b02d16b2aa6f1e0f}} 
+\index{Index\+Handler@{Index\+Handler}!write\+To\+Disk@{write\+To\+Disk}}
+\index{write\+To\+Disk@{write\+To\+Disk}!Index\+Handler@{Index\+Handler}}
+\subsubsection{\texorpdfstring{write\+To\+Disk()}{writeToDisk()}}
+{\footnotesize\ttfamily void Index\+Handler\+::write\+To\+Disk (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Writes the index to a persistent file location in disk 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+indexhandler.\+h\item 
+indexhandler.\+cpp\end{DoxyCompactItemize}
